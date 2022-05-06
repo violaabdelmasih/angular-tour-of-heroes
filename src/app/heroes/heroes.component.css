@@ -1,0 +1,9 @@
+.heroes-list-ul{
+    list-style: none;
+}
+.heroes-list{
+    font-size: 16px;
+}
+#hero-name{
+    color: aquamarine;
+}
