@@ -1,6 +1,15 @@
 
-<h1>{{ title }} </h1>
-<a [routerLink]="['/heroes']" routerLinkActive="router-link-active">Give me my heroes</a>
+<h1>My heroes </h1>
+<ul>
+    <li *ngFor="let hero of heroesData">
+        {{hero.heroes_name}}: {{hero.heroes_rating}} <button (click)="delete(hero.heroes_id">Delete</button><button (click)="update(hero.heroes_id">Update</button>
+    </li>
+</ul>
+
+<form>
+    create Hero 
+</form>
+<!--<a [routerLink]="['/heroes']" routerLinkActive="router-link-active">Give me my heroes</a> --> 
 
 <router-outlet></router-outlet>
 

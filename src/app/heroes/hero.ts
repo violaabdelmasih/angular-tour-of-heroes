@@ -1,4 +1,5 @@
 export interface Hero {
-    id: number;
-    name: string;
+   heroes_id: number;
+   heroes_name: string;
+   heroes_rating: number;
   }
